@@ -37,7 +37,7 @@ nav li{margin-left: 10px;}
 .carousel-caption h1{font-size: 500%;}
 
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:925px){
   .carousel-caption h1{font-size:400%;}
   .carousel-caption h2{font-size:1.6rem;}
   .abt-list-text{font-size: 1.2rem}
