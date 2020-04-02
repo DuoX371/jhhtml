@@ -1,0 +1,55 @@
+/*contact.html*/
+.cHeadContainer{margin-bottom:24%;}
+.cTopBg{width:100%;top:6%;position:absolute;}
+.banner{position:absolute;top:23%;left:35%;font-size:70px;color:#fffa94;background-color:#1f1f1f;opacity:0.7;width:35%;text-align:center;border:10px solid black;border-radius:25px 0px 25px 0px;}
+.mainCContent{background-image: linear-gradient(to top, grey , white);height:850px;}
+.CContent1{background-color:#969696; width:40%;height:27%;color:white;margin:28% 32% 0% 32%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:1%;}
+.CContent1T{font-size:27px;}
+.CCard1{display:flex;font-size:19px;}
+.CCaddress{width:50%;word-wrap:break-word;margin-top:3%;}
+.CCcontact{width:50%;word-wrap:break-word;margin-top:5%;margin-left:8%;}
+.CCcontactP{font-size:25px;margin-right:5%;}
+.CCcontactP2{margin-left:10%;}
+.CCcontactM{font-size:25px;margin-top:7%;}
+.CCcontactM2{margin-left:3%;}
+.CContent2{background-color:#969696; width:25%;height:62%;color:white;margin:4% 24% 0% 24%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:1%;display:column;font-size: 18px;}
+.CContent2T{margin-top:5%;}
+.CContent2I{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;}
+.CContent2I2{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;height:40%;text-align: left;word-wrap: break-word;}
+.CContent2B{border:5px solid #808080;border-radius: 8px;background-color:#ababab;margin-left: 25%;}
+.CContent2I:hover{background-color: #d1d1d1;}
+.CContent2I:focus{background-color: #d1d1d1;}
+.CContent2I2:hover{background-color: #d1d1d1;}
+.CContent2I2:focus{background-color: #d1d1d1;}
+.CContent2B:hover{background-color: #d1d1d1;}
+.CContent3{position: absolute;left:55%;top:91.5%;background-color:#969696;padding:10px;}
+.CContent3 img{max-width: 500px;max-height: 515px;}
+
+@media only screen and (max-width:1250px){
+/*contact.html*/
+.cHeadContainer{margin-bottom:25%;}
+.cTopBg{width:100%;top:8%;position:absolute;}
+.banner{position:absolute;top:13%;left:15%;font-size:30px;color:#fffa94;background-color:#1f1f1f;opacity:0.7;width:75%;text-align:center;border:10px solid black;border-radius:25px 0px 25px 0px;}
+.mainCContent{background-image: linear-gradient(to top, grey , white);height:1500px;}
+.CContent1{background-color:#969696; width:70%;height:16%;color:white;margin-left: 17%;margin-top:40%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:1%;}
+.CContent1T{font-size:20px;}
+.CCard1{display:flex;font-size:15px;}
+.CCaddress{width:40%;word-wrap:break-word;margin-top:3%;}
+.CCcontact{width:60%;word-wrap:break-word;margin-top:5%;margin-left:8%;}
+.CCcontactP{font-size:25px;margin-right:5%;}
+.CCcontactP2{margin-left:10%;}
+.CCcontactM{font-size:25px;margin-top:7%;}
+.CCcontactM2{margin-left:3%;}
+.CContent2{background-color:#969696; width:70%;height:30%;color:white;margin:10% 0% 10% 17%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:3%;display:column;font-size: 18px;}
+.CContent2T{margin-top:5%;}
+.CContent2I{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;}
+.CContent2I2{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;height:30%;text-align: left;word-wrap: break-word;}
+.CContent2B{border:5px solid #808080;border-radius: 8px;background-color:#ababab;margin-left: 25%;}
+.CContent2I:hover{background-color: #d1d1d1;}
+.CContent2I:focus{background-color: #d1d1d1;}
+.CContent2I2:hover{background-color: #d1d1d1;}
+.CContent2I2:focus{background-color: #d1d1d1;}
+.CContent2B:hover{background-color: #d1d1d1;}
+.CContent3{position: absolute;left:17%;top:170%;background-color:#969696;padding:10px;}
+.CContent3 img{max-width: 400px;max-height: 515px;}
+}
