@@ -138,6 +138,12 @@
     <br>
     <button type="button" class="btn btn-outline-dark btn-lg text-center">See More..</button>
 
+    <div>
+      <button class="floating-btn" id="topFunc"  onclick="topFunction()" title="Back to Top">
+      <span class="glyphicon glyphicon-arrow-up">&#xe143;</span>
+      </button>
+    </div>
+
     <div class="tabSpacing">
     </div>
   </div>
@@ -147,18 +153,20 @@
 </body>
 
 <script>
+var floatBtn = document.getElementById("topFunc");
+
+window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-            var top= document.getElementById("totop");
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            top.classList.add("d-block");
-          } else {
-            top.classList.remove("d-block");
-          }
-        }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    floatBtn.style.display = "block";
+  } else {
+    floatBtn.style.display = "none";
+  }
+}
 function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 </script>
 
