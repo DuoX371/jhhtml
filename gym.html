@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -58,23 +58,130 @@
       </div>
 
       <div class="w3-content w3-section">
-        <div class="gSlides w3-animate-left" style="display:flex;">
-          <img  src="gym1.jpg" style="width:20%">
-          <img  src="gym1.jpg" style="width:20%">
+        <div class="gSlides w3-animate-left">
+          <img class="slideItems" src="treadmill1.jpg">
+          <img class="slideItems" src="treadmil2.jpg">
+          <img class="slideItems" src="treadmil3.jpg">
         </div>
         <div class="gSlides w3-animate-left">
-          <img  src="gym2.jpg" style="width:100%">
-          <img  src="gym2.jpg" style="width:100%">
+          <img class="slideItems" src="bag1.jpg">
+          <img class="slideItems" src="bag3.jpg">
+          <img class="slideItems" src="bag2.jpg">
         </div>
         <div class="gSlides w3-animate-left">
-          <img  src="gym3.jpg" style="width:100%">
-          <img  src="gym2.jpg" style="width:100%">
+          <img class="slideItems" src="dumbel3.jpg">
+          <img class="slideItems" src="dumbel2.jpg" >
+          <img class="slideItems" src="dumbel1.jpg">
         </div>
       </div>
 
+      <div class="gCarouselF">Treadmil, Bag, Dumbel and More!</div>
+      <div class="btnDown" id="todown" onclick="downFunction()">
+      <i class="fa fa-chevron-circle-down"></i>
+      </div>
   </div>
+  </div>
+  <div >
+    <div class="gmc1">
+      <div class="gmc1T">
+        Dumbel
+      </div>
+      <div class="gmc1C">
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <div class="mySlides1">
+          <div style="display:flex;">
+            <div class="gitem1">
+              <img class="gmc1CI" src="dumbel4.jpg">
+              <div class="itemName tooltip2">Hex Dumbbell 2.5 Kg<span class="tooltiptext">Our design team developed this dumbbell specifically for cross training.A versatile dumbbell for bodybuilding movements and functional exercises (press-up-type exercises). Its hexagonal shape offers better stability. durable rubber to protect against impacts.</span></div>
+              <div class="itemPrice">only <b>RM49</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="dumbel3.jpg">
+              <div class="itemName tooltip2">Hex Dumbbell 5 Kg<span class="tooltiptext">Our design team developed this dumbbell specifically for cross training.A versatile dumbbell for bodybuilding movements and functional exercises (press-up-type exercises). Its hexagonal shape offers better stability. durable rubber to protect against impacts.</span></div>
+              <div class="itemPrice">only <b>RM79</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="dumbel2.jpg">
+              <div class="itemName tooltip2">Hex Dumbbell 7.5 Kg<span class="tooltiptext">Our design team developed this dumbbell specifically for cross training.A versatile dumbbell for bodybuilding movements and functional exercises (press-up-type exercises). Its hexagonal shape offers better stability. durable rubber to protect against impacts.</span></div>
+              <div class="itemPrice">only <b>RM99</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides1">
+          <div style="display:flex;">
+            <div class="gitem1">
+              <img class="gmc1CI" src="dumbel2.jpg">
+              <div class="itemName tooltip2">Hex Dumbbell 10 Kg<span class="tooltiptext">Our design team developed this dumbbell specifically for cross training.A versatile dumbbell for bodybuilding movements and functional exercises (press-up-type exercises). Its hexagonal shape offers better stability. durable rubber to protect against impacts.</span></div>
+              <div class="itemPrice">only <b>RM109</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="dumbel5.jpg">
+              <div class="itemName tooltip2">Hex Dumbbell 15 Kg<span class="tooltiptext">Our design team developed this dumbbell specifically for cross training.A versatile dumbbell for bodybuilding movements and functional exercises (press-up-type exercises). Its hexagonal shape offers better stability. durable rubber to protect against impacts.</span></div>
+              <div class="itemPrice">only <b>RM179</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+    </div>
 
+    <div class="btnDown" id="todown" onclick="downFunction2()">
+    <i class="fa fa-chevron-circle-down"></i>
+    </div>
 
+    <div class="gmc1">
+      <div class="gmc1T">
+        Treadmil
+      </div>
+      <div class="gmc1C">
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <div class="mySlides2">
+          <div style="display:flex;">
+            <div class="gitem1">
+              <img class="gmc1CI" src="treadmil2.jpg">
+              <div class="itemName tooltip2">T520B Treadmill<span class="tooltiptext">Our passionate cardio fitness designers created this treadmill to help you keep fit and slim your figure up to 5 hours a week. The T520 treadmill was designed for low-intensity jogging at home. Simple and intuitive, it will be the perfect partner to maintain your cardiovascular capabilities.</span></div>
+              <div class="itemPrice">only <b>RM1799</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="treadmill1.jpg">
+              <div class="itemName tooltip2">T900C Treadmill<span class="tooltiptext">Our passionate cardio fitness designers developed this treadmill for keeping up your cardio fitness up to 5 hours per week. The T900 treadmill is designed for regular, high-intensity running. It's the perfect ally for runners looking to improve results through indoor training sessions.</span></div>
+              <div class="itemPrice">only <b>RM2799</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="treadmil3.jpg">
+              <div class="itemName tooltip2">Intense Run Treadmill<span class="tooltiptext">Our passionate cardio fitness designers developed this treadmill for building your cardio and muscle strength up to 35 hours per week. The Intense Run by Domyos treadmill is the ideal treadmill for intensive use of up to 35 hours per week. Vary your training sessions with a maximum speed of 22km/h and incline of 15%</span></div>
+              <div class="itemPrice">only <b>RM3399</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides2">
+          <div style="display:flex;">
+            <div class="gitem1">
+              <img class="gmc1CI" src="treadmilkit.jpg">
+              <div class="itemName tooltip2">Treadmill Lubricant Kit<span class="tooltiptext">Our engineers recommend using this lubricant for maintaining the belt on your treadmill.Lubricating your treadmill will extend its lifetime and ensure a smoother performance.</span></div>
+              <div class="itemPrice">only <b>RM19</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="treadmilkit2.png">
+              <div class="itemName tooltip2">Silicone Treadmill Belt Lubricant<span class="tooltiptext"> Reduce friction between running belts and running boards, protect wear-resistant coatings on running boards, and extend the service life of running belts and running boards.</span></div>
+              <div class="itemPrice">only <b>RM8</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+
+    </div>
   </div>
 
 
@@ -116,19 +223,37 @@ function carousel2() {
 </script>
 
 <script>
-function scrollFunction() {
-            var top= document.getElementById("totop");
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            top.classList.add("d-block");
-          } else {
-            top.classList.remove("d-block");
-          }
-        }
-function topFunction() {
+function downFunction() {
           document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+          document.documentElement.scrollTop = 700;
         }
 
+function downFunction2() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 1350;
+}
+</script>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex[no]-1].style.display = "block";
+}
 </script>
 
 <!-- Site footer -->
