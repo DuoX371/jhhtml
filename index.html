@@ -136,7 +136,11 @@
     </div>
 
     <br>
-    <button type="button" class="btn btn-outline-dark btn-lg text-center">See More..</button>
+    <button type="button" class="btn btn-outline-dark btn-lg text-center" onclick="show_hide()">See More.. ></button>
+    <div id="moreList">
+      <button type="button" class="selfbtn" onclick="window.location.href='male.html'">Male</button>
+      <button type="button" class="selfbtn2" onclick="window.location.href='female.html'">Female</button>
+    </div>
 
     <div>
       <button class="floating-btn" id="topFunc"  onclick="topFunction()" title="Back to Top">
@@ -167,7 +171,17 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+</script>
 
+<script>
+function show_hide() {
+  var x = document.getElementById("moreList");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 </script>
 
 <!-- Site footer -->

@@ -56,6 +56,13 @@ html {
 }
 
 .carousel-caption h1{font-size: 500%;}
+#moreList{display: none;transition: all 2s;}
+.selfbtn{position: absolute;margin-left: 80px;margin-top: -47px;border:1px solid grey;background-color: white;padding:10px;border-radius: 5px;}
+.selfbtn:hover{background-color: black;color:white;}
+.selfbtn:focus{outline:none;}
+.selfbtn2{position: absolute;margin-left: 140px;margin-top: -47px;border:1px solid grey;background-color: white;padding:10px;border-radius: 5px;}
+.selfbtn2:hover{background-color: black;color:white;}
+.selfbtn2:focus{outline:none;}
 
 
 @media only screen and (max-width:925px){

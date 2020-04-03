@@ -25,6 +25,15 @@
 .CContent3{position: absolute;left:55%;top:91.5%;background-color:#969696;padding:10px;}
 .CContent3 img{max-width: 500px;max-height: 515px;}
 
+/*gym.html*/
+.gHeadContainer{margin-bottom:76%;}
+.gTopBg{width:100%;top:5%;position:absolute;opacity: 0.8;z-index: -1}
+.gCarousel{background-color: white;width:100%;height:400px;margin-top:6%;opacity: 0.9;}
+.gCarouselT{font-size:25px;width:100%;text-align: center;margin-top:1%;margin-bottom: 1%;}
+.gSlides {display:none;}
+.gTitle {display:none}
+
+
 @media only screen and (max-width:1250px){
 /*contact.html*/
 .cHeadContainer{margin-bottom:25%;}
