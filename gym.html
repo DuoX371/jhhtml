@@ -182,6 +182,67 @@
       </div>
 
     </div>
+
+    <div class="btnDown" id="todown" onclick="downFunction3()">
+    <i class="fa fa-chevron-circle-down"></i>
+    </div>
+
+    <div class="gmc1">
+      <div class="gmc1T">
+        Bag
+      </div>
+      <div class="gmc1C">
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <div class="mySlides3">
+          <div style="display:flex;">
+            <div class="gitem1">
+              <img class="gmc1CI" src="gbag1.jpg">
+              <div class="itemName tooltip2">Fitness Bag 30L - Burgundy<span class="tooltiptext">Our passionate fitness team developed this fold-down sports bag for carrying your fitness outfit and gear to and from your workout. This 30L fold-down barrel bag is light and folds away into its pouch so that it won't take up any space when not being used!</span></div>
+              <div class="itemPrice">only <b>RM19</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="gbag2.jpg">
+              <div class="itemName tooltip2">Fitness Bag 30L - Dark Grey<span class="tooltiptext">We have designed this product for people like you who do cardio fitness and need to carry fitness clothing and accessories for their workout. The 30-litre fitness bag lets you carry all your fitness clothing and accessories. The compartments mean you can have (6) for separating all of your belongings.</span></div>
+              <div class="itemPrice">only <b>RM69</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="gbag3.jpg">
+              <div class="itemName tooltip2">Fitness Bag 20L - Pink<span class="tooltiptext">Our passionate fitness team developed this sports bag for carrying all your workout essentials Carry the essentials to your fitness class in this 20-litre fitness bag. A small bag for people who wear their fitness clothing to and from their class.</span></div>
+              <div class="itemPrice">only <b>RM49</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="mySlides3">
+          <div style="display:flex;">
+            <div class="gitem1">
+              <img class="gmc1CI" src="gbag4.jpg">
+              <div class="itemName tooltip2">Fitness Bag 20L - Grey<span class="tooltiptext">Our passionate fitness team developed this sports bag for carrying all your workout essentialsCarry the essentials to your fitness class in this 20-litre fitness bag. A small bag for people who wear their fitness clothing to and from their class.</span></div>
+              <div class="itemPrice">only <b>RM49</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="gbag5.jpg">
+              <div class="itemName tooltip2">Fitness Bag 55L - Black<span class="tooltiptext">Our passionate fitness team developed this bag for carrying several fitness outfits and accessories. The Power Bag 55L means you can transport several fitness or weight training accessories and outfits. It's got plenty of handy compartments for separating out your things.</span></div>
+              <div class="itemPrice">only <b>RM89</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+            <div class="gitem1">
+              <img class="gmc1CI" src="gbag6.jpg">
+              <div class="itemName tooltip2">Fitness Bag 30L - Purple<span class="tooltiptext">Our passionate fitness team designed this ultra-practical sports bag to hold all your shoe necessities, even a towel! The 30-litre fitness bag lets you carry all your fitness clothing and accessories. It has six compartments for separating all of your belongings..</span></div>
+              <div class="itemPrice">only <b>RM69</b></div>
+              <button class="itemCart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+
+    </div>
+
+
   </div>
 
 
@@ -232,13 +293,18 @@ function downFunction2() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 1350;
 }
+function downFunction3() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 2000;
+}
 </script>
 
 <script>
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
+var slideIndex = [1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3"]
 showSlides(1, 0);
 showSlides(1, 1);
+showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
