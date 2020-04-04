@@ -12,7 +12,7 @@
 .CCcontactP2{margin-left:10%;}
 .CCcontactM{font-size:25px;margin-top:7%;}
 .CCcontactM2{margin-left:3%;}
-.CContent2{background-color:#969696; width:25%;height:62%;color:white;margin:4% 24% 0% 24%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:1%;display:column;font-size: 18px;}
+.CContent2{background-color:#969696; width:25%;height:62%;color:white;margin:4% 24% 0% 24%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:1%;font-size: 18px;}
 .CContent2T{margin-top:5%;}
 .CContent2I{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;}
 .CContent2I2{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;height:40%;text-align: left;word-wrap: break-word;}
@@ -44,7 +44,7 @@
 .prev, .next{cursor: pointer;padding: 16px;margin-top: 100px;color: white;font-weight: bold;font-size: 50px;transition: 0.6s ease;border-radius: 0 3px 3px 0;user-select: none;margin-left: 2%;margin-right: 2%;height:110px;}
 .next{right:3%;border-radius: 3px 0 0 3px;}
 .prev:hover, .next:hover{background-color: #f1f1f1;color: black;}
-.gItem1{display:column;}
+
 .itemName{font-weight: bold;font-size: 25px;text-align: center;margin-top: -10px;}
 .itemPrice{color:green;font-size: 25px;text-align: center;}
 .itemCart{border-style: none;margin-left:20%;margin-top: 3%;background-color: white;border: 3px solid black;border-radius: 5px;width:60%;font-size: 20px;}
@@ -85,7 +85,7 @@
 .CCcontactP2{margin-left:10%;}
 .CCcontactM{font-size:25px;margin-top:7%;}
 .CCcontactM2{margin-left:3%;}
-.CContent2{background-color:#969696; width:70%;height:30%;color:white;margin:10% 0% 10% 17%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:3%;display:column;font-size: 18px;}
+.CContent2{background-color:#969696; width:70%;height:30%;color:white;margin:10% 0% 10% 17%;border:5px solid #969696;box-shadow:1px 1px 5px 5px grey;padding-left:3%;font-size: 18px;}
 .CContent2T{margin-top:5%;}
 .CContent2I{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;}
 .CContent2I2{border-style:none;background-color:#ababab;border-bottom:1px solid #bdbdbd;margin-top:2%;margin-bottom:3%;width:90%;height:30%;text-align: left;word-wrap: break-word;}
