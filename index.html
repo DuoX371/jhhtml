@@ -53,7 +53,7 @@
       <img src="bg1.jpg" class="d-block w-100 bgImage" alt="...">
       <div class="carousel-caption d-md-block">
           <h1>Take the first step forward</h1><br>
-          <button type="button" class="btn btn-outline-warning btn-lg">Get Started</button>
+          <button type="button" class="btn btn-outline-warning btn-lg" onclick="downFunction()">Get Started</button>
         </div>
     </div>
     <div class="carousel-item">
@@ -61,7 +61,7 @@
       <div class="carousel-caption d-md-block">
           <h1>No Pain No Gain</h1>
           <br>
-          <button type="button" class="btn btn-outline-warning btn-lg">Lets Go!</button>
+          <button type="button" class="btn btn-outline-warning btn-lg" onclick="downFunction()">Lets Go!</button>
         </div>
     </div>
 
@@ -171,6 +171,11 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function downFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 1100;
+}
 </script>
 
 <script>
@@ -196,11 +201,11 @@ function show_hide() {
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>
           <ul class="footer-links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Gym</a></li>
-            <li><a href="#">Men's</a></li>
-            <li><a href="#">Ladies's</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gym.html">Gym</a></li>
+            <li><a href="male.html">Men's</a></li>
+            <li><a href="female.html">Ladies's</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
       </div>
