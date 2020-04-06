@@ -97,8 +97,8 @@ html {
   .abt-caption-l{margin-left: -3rem;}
 }
 
-@media only screen and (max-width:300px){
-  .carousel-caption h1{font-size:200%;}
+@media only screen and (max-width:375px){
+  .carousel-caption h1{font-size:190%;}
   .carousel-caption h2{font-size:1.4rem}
   .abt-list-text{font-size: 0.8rem}
   .abt-h2{margin-bottom: -1rem;}
