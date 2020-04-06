@@ -97,6 +97,19 @@ html {
   .abt-caption-l{margin-left: -3rem;}
 }
 
+@media only screen and (max-width:300px){
+  .carousel-caption h1{font-size:200%;}
+  .carousel-caption h2{font-size:1.4rem}
+  .abt-list-text{font-size: 0.8rem}
+  .abt-h2{margin-bottom: -1rem;}
+  .carousel-caption h3{font-size:0.8rem;
+                      margin-bottom:1rem;}
+  .site-footer{font-size:13px !important;}
+  .site-footer h6{font-size:13px !important;}
+  .tabSpacing{margin-top: 30px;
+    margin-bottom:-1rem}
+  .abt-caption-l{margin-left: -3rem;}
+}
 footer {
   background-color: dark;
   padding: 200px;
