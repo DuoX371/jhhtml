@@ -99,15 +99,15 @@ html {
 
 @media only screen and (max-width:375px){
   .carousel-caption h1{font-size:190%;}
-  .carousel-caption h2{font-size:1.4rem}
-  .abt-list-text{font-size: 0.8rem}
+  .carousel-caption h2{font-size:1.2rem}
+  .abt-list-text{font-size: 0.6rem}
   .abt-h2{margin-bottom: -1rem;}
-  .carousel-caption h3{font-size:0.8rem;
+  .abt-h2-left{padding-left: 80px;}
+  .carousel-caption h3{font-size:0.6rem;
                       margin-bottom:1rem;}
   .site-footer{font-size:13px !important;}
   .site-footer h6{font-size:13px !important;}
-  .tabSpacing{margin-top: 30px;
-    margin-bottom:-1rem}
+  .tabSpacing{margin-top: -20px;}
   .abt-caption-l{margin-left: -3rem;}
 }
 footer {
