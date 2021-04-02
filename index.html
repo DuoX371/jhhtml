@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style2.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -92,13 +94,13 @@
     <div class="collapse navbar-collapse" id="navBarUser">
          <ul class="nav navbar-nav nav-flex-icons ml-auto">
            <li class="nav-item">
-                <a class="nav-link" href="dashboard.html"><i class="fas fa-columns pr-2"></i>Dashboard</a>
+                <a class="nav-link" href="dashboard.html"><i class="fas fa-user-alt"></i> Dashboard</a>
             </li>
        <li class="nav-item">
-           <a class="nav-link" href="login.html"><i class="far fa-user pr-2"></i>Log In</a>
+           <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a>
        </li>
        <li class="nav-item">
-           <a class="nav-link" href="register.html">Sign Up</a>
+           <a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Sign Up</a>
        </li>
      </ul>
    </div>
@@ -186,7 +188,7 @@
       We believe e-hailing service should be a fast and fun experience.</p>
       <br>
 
-    <h1 class="text-dark font-weight-bold pb-4 tabSpacing" style="text-align:left;">FAQs</h1>
+    <h1 id="FAQs"class="text-dark font-weight-bold pb-4 tabSpacing" style="text-align:left;">FAQs</h1>
     <br>
     <button class="collapsible text-center btn btn-success">What is One Way?</button>
     <div class="content">
@@ -283,21 +285,34 @@ function show_hide() {
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>About</h6>
-          <p class="text-justify">One Way is a web-based application that sells gyms and sports apperals. Providing the best services and a wide selection of options for users.</p>
+          <p class="text-justify">One Way is a company offers services such as
+            taxis, e-wallet, food delivery and parcel delivery services.
+            Providing the best services and a wide selection of options for users.</p>
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
+          <h6>Services</h6>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="gym.html">Gym</a></li>
-            <li><a href="male.html">Men's</a></li>
-            <li><a href="female.html">Ladies's</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">One Way Transport</a></li>
+            <li><a href="gym.html">One Way Food</a></li>
+            <li><a href="male.html">One Way Delivery</a></li>
+            <li><a href="female.html">One Way Pay</a></li>
+            <li><a href="#FAQs">FAQs</a></li>
           </ul>
         </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="gym.html">Gym</a></li>
+              <li><a href="male.html">Men's</a></li>
+              <li><a href="female.html">Ladies's</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
       </div>
-      <hr>
     </div>
     <div class="container">
       <div class="row">
