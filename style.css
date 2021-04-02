@@ -286,6 +286,35 @@ footer {
   }
 }
 
+/*onewayTransport*/
+#transportTab .nav-tabs .nav-link{
+  padding:20px 0;
+  color:#5F6A5F;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.serviceContent{
+  padding-left:20px;
+}
+
+.logoEx{
+  transition: transform .3s;
+}
+.logoEx:hover{
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.textEx{
+  transition: transform .6s;
+}
+
+.textEx:hover{
+  color:#188A19;
+}
+
 /*
 @media only screen and (max-width: 1024px) {
           body { margin: 0; padding: 0; }
