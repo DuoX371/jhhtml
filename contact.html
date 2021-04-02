@@ -18,8 +18,77 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 300px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerx {
+  margin-top:70px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+  width: 800px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.xtitle{
+  font-size: 30px;
+  margin-left: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .xtitle{
+    font-size: 30px;
+    margin-left: 120px;
+  }
+
+  .containerx {
+    margin-top:70px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    width: 450px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 120px;
+  }
+}
+</style>
 </head>
-<body>
+<body style="background-color: #38c975;">
   <nav id="NavBar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="index.html">One Way</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,46 +137,26 @@
     </div>
   </nav>
 
+  <div class="containerx">
+    <form action="">
 
-  <div class="cHeadContainer">
-    <img src="contactbg.jpg" alt="contactbg.jpg" class="cTopBg"/>
-      <div class="banner">CONTACT US!</div>
-  </div>
-  <div class="mainCContent">
-    <div class="CContent1">
-      <div class="CContent1T">
-          <strong>SPORTS JOLLE</strong>
-      </div>
-      <div class="CCard1">
-        <div class="CCaddress">15, Jalan Sri Semantan 1, Bukit Damansara, 50490 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</div>
-        <div class="CCcontact">
-          <i class="fa fa-phone CCcontactP"></i>999-(999)-999<br>
-          <a class="CCcontactP2">+60 16-200 5289</a><br>
-          <i class="material-icons CCcontactM">email</i><i class="CCcontactM2">sportjolle@hotmail.com</i>
-        </div>
-      </div>
-    </div>
-    <div class="CContent2">
-      <form>
-        <div class="CContent2T">Name:</div>
-        <input class="CContent2I" type="text" placeholder="Name" required/>
-        <div class="CContent2T">Email:</div>
-        <input class="CContent2I" type="text" placeholder="Email" required/>
-        <div class="CContent2T">Messages:</div>
-        <textarea class="CContent2I2" placeholder="Write Something..."></textarea>
-        <input class="CContent2B" type="submit" value="Send Messages"/>
-      </form>
-    </div>
-  </div>
+      <div class="xtitle">Contact Us!</div>
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-  <div class="CContent3">
-    <img src="realgmap2.png" alt="GoogleMap"/>
-  </div>
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your Email..">
 
-  <div>
-    <button class="floating-btn" id="topFunc"  onclick="topFunction()" title="Back to Top">
-    <span class="glyphicon glyphicon-arrow-up">&#xe143;</span>
-    </button>
+      <label for="lname">Title</label>
+      <input type="text" id="title" name="title" placeholder="Title..">
+
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
   </div>
 
 
