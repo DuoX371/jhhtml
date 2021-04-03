@@ -38,7 +38,9 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
 }
 
 input[type=submit]:hover {
@@ -46,8 +48,6 @@ input[type=submit]:hover {
 }
 
 .containerx {
-  margin-top:70px;
-  margin-left: 350px;
   margin-bottom: 20px;
   width: 800px;
   border-radius: 5px;
@@ -67,8 +67,9 @@ input[type=submit]:hover {
   }
 
   .containerx {
-    margin-top:70px;
-    margin-left: 15px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     width: 450px;
     border-radius: 5px;
@@ -83,7 +84,9 @@ input[type=submit]:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
   }
 }
 </style>
@@ -137,27 +140,56 @@ input[type=submit]:hover {
     </div>
   </nav>
 
-  <div class="containerx">
-    <form action="">
+  <div class="container">
+    <h1 class="text-center text-dark font-weight-bold pb-4 tabSpacing" style="padding-top:50px;">Contact Us</h1>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <p class="text-center" style="font-size:20px;">Have any Inquiries? Feel free to contact us!
+      <br>You may also find your problems in <a href="index.html#FAQs">FAQs</a>.<p>
+    <div class="row">
+      <div class="containerx col-sm-8">
+      <form action="">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-      <div class="xtitle">Contact Us!</div>
-      <label for="fname">Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your Email..">
 
-      <label for="lname">Email</label>
-      <input type="text" id="email" name="email" placeholder="Your Email..">
-
-      <label for="lname">Title</label>
-      <input type="text" id="title" name="title" placeholder="Title..">
+        <label for="lname">Title</label>
+        <input type="text" id="title" name="title" placeholder="Title..">
 
 
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-      <input type="submit" value="Submit">
+        <input type="submit" class="btn btn-success" value="Submit">
 
-    </form>
-  </div>
+      </form>
+      </div>
+      <div class="col-sm-4" style="padding-left:50px;">
+          <div class="row tabSpacing">
+            <img src="https://cdn2.iconfinder.com/data/icons/pittogrammi/142/94-512.png" class="card-img-top" style="height:50px; width:50px">
+              <p style="padding-left:10px;color:white">241, Suria KLCC, <br>
+                Kuala Lumpur City Centre,<br>
+                50088 Kuala Lumpur,<br>
+                Wilayah Persekutuan Kuala Lumpur</p>
+          </div>
+          <div class="row tabSpacing">
+            <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" class="card-img-top" style="height:50px; width:50px">
+              <p style="padding-left:10px;color:white">+601237842952
+              <br>+60389420932</p>
+
+          </div>
+          <div class="row tabSpacing">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/email-1818372-1541480.png" class="card-img-top" style="height:50px; width:50px">
+              <p style="padding-left:10px;color:white">onewaysupport@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<h1 class="text-center text-dark font-weight-bold pb-4 tabSpacing" style="padding-top:50px;">Our Location</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63737.528314126575!2d101.6919523103333!3d3.2004458161560825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0xc955b08cfc1aae29!2sSuria%20KLCC!5e0!3m2!1sen!2smy!4v1617438675630!5m2!1sen!2smy" width="100%" height="600" style="border:0;margin-bottom:-5px;" allowfullscreen="" loading="lazy"></iframe>
 
 
 <script>
