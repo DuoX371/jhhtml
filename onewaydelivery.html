@@ -18,6 +18,16 @@
 
 </head>
 <style>
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url(https://imgur.com/JORTKYd.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(https://imgur.com/JORTKYd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
   section {
     padding: 60px 0;
   }
@@ -95,20 +105,20 @@
   </div>
 </nav>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-<div class="carousel-inner" >
-  <div class="carousel-item active">
-    <div class="carousel-caption d-md-block">
-      <h3 class="display-4 font-weight-bold text-black "> <span class="text-warning">One Way</span> Delivery Services</h3>
-          <p class="paral text-white">An on-demand delivery service that is safe, fast, and reliable</p>
-<button type="button" href="conEx" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</button>        </div>
-    <img src="image/delivery3.jpg" class="d-block w-100" alt="...">
-  </div>
-</div>
-</div>
+
+<header class="masthead">
+        <div class="container jumbotron-padding  text-center">
+        <h3 class="display-4 font-weight-bold text-white "><span class="text-success">One Way</span> Delivery Services</h3>
+           <p class="paral text-white">
+             An on-demand delivery service that is safe, fast, and reliable
+           </p>
+             <button type="button" href="conEx" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</button>
+        </div>
+      </header>
+
 
 <div class="container" id="conEx">
-          <h2 class="px-4 py-4 text-dark">Why Should You Use <span class="text-warning">HAIL Express</span>?</h2>
+          <h2 class="px-4 py-4 text-dark">Why Should You Use <span class=" text-success">HAIL Express</span>?</h2>
 
           <div class="row">
                     <div class="col-lg-4">
@@ -162,13 +172,13 @@
 
 
 
-      <section class="bg-warning ">
+      <section class="bg-success ">
 
 
 
           <div class="container ">
 
-            <h2 class="pb-4 text-dark font-weight-bold text-center">Track and Trace</h2>
+            <h2 class="pb-4 text-white font-weight-bold text-center">Track and Trace</h2>
             <div class="row">
               <div class="col-sm-9 col-md-7 col-lg-5 mx-auto" id="formTrack">
                 <div class="card card-signin shadow-lg">
@@ -188,7 +198,7 @@
 
                       <input class="form-control form-control form-control-borderless bg-light" type="text" name="trackingNumber" required="" minlength="12" id="inputTrack" placeholder="Enter 12 valid characters">
                       <div class="input-group-append">
-                       <input class="btn btn- btn-warning" type="submit" name="stsubmit" id="tsubmit" value="Submit">
+                       <input class="btn btn- btn-success" type="submit" name="stsubmit" id="tsubmit" value="Submit">
                       </div>
                        </div>
 
@@ -248,23 +258,23 @@
           </section>
 
           <div class="container mb-5" id="ex">
-                <h1 class="py-5 text-warning font-weight-bold text-center">Package Size And Fares Guide</h1>
+                <h1 class="py-5 text-success font-weight-bold text-center">Package Size And Fares Guide</h1>
               	<div class="row">
               <div class="col-md-6 col-lg-6 py-5 ">
                 <div class="table-responsive ">
                  <table class="table table-bordered table-hover table-light table-striped shadow w-100">
-                  <thead class="thead-dark">
+                  <thead class="bg-success">
                   <tr>
                    <th colspan="2" class="text-center text-white " style="font-size:20px;">Package Size Guide</th>
                   </tr>
                    </thead>
                    <tbody><tr>
-                    <td class="table-warning "> Size </td>
-                    <td class="table-warning ">43cm x 43cm x 43cm</td>
+                    <td class="table-active"> Size </td>
+                    <td class="table-light">43cm x 43cm x 43cm</td>
                    </tr>
                    <tr>
-                    <td class="table-warning "> Weight</td>
-                    <td class="table-warning ">Below 10kg</td>
+                    <td class= "table-active"> Weight</td>
+                    <td class="table-light">Below 10kg</td>
                    </tr>
 
                 </tbody></table>
@@ -293,22 +303,6 @@
               </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-          <section id="transportTab">
-              	<div class="container">
-                  <h1 id="servicesHome" class="text-center text-dark font-weight-bold pb-4 tabSpacing">Track and Trace</h1>
-
-
-            </div>
 
 
 
