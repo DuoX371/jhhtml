@@ -42,10 +42,12 @@ header.masthead {
     background-color: #212529;
     border-color: #212529;
 }
-.btn-outline-success:hover {
-    color: #fff;
-    background-color: #000000;
-    border-color: #28a745;
+.btn-outline-success {
+    color: #28a745;
+    border-color: #1e7e34;
+}
+section {
+  padding: 60px 60px;
 }
 </style>
 <body>
@@ -103,11 +105,11 @@ header.masthead {
            <h4 class="paral text-white">
             One Way Pay Balance, One Way Points, One Way Ranking System
            </h4>
-             <button type="button" href="conEx" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</button>
+             <a href="#1" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</a>
         </div>
       </header>
 
-      <div class="container ">
+      <div id="1"class="container ">
         <h2 class="py-4 px-3 text-dark" ><span class="font-weight-bold text-success">One Way</span> Dashboard </h2>
 
             <div class="container-fluid row text-center ml-auto mt-5">
@@ -264,102 +266,193 @@ header.masthead {
 
                 					<div class="tab-pane fade" id="share" role="tabpanel" aria-labelledby="nav-profile-tab" style="padding-bottom:30px;">
                             <div class="container" >
-                              <h2 class="py-4 px-3 text-dark" >What is One Way Share?</h2>
-                              <div class="">
-                                <p class="info pt-2 pb-4 px-3  text-dark text-justify" style="font-size:20px;"><span class="font-weight-bold text-success">One Way Share </span>
-                                  is a shared One Way ride that allows you to spilt the cost of your ride with a stranger who is headed in a similiar direction as you.</p>
-                              </div>
-                              <h2 class="px-4 py-4 text-dark" >Why One Way Share?</h2>
-                              <div class="row" style="padding-left:50px;">
-                                <img src="https://www.grab.com/my/wp-content/uploads/sites/8/2018/06/GrabShare-website-Pax-03.png" class="card-img-top logoEx" style="height:100px; width:100px">
-                                <div class="serviceContent textEx">
-                                  <h3>Share & Save</h3>
-                                  <p>Share rides with anyone on your way to your destination</p>
-                                </div>
-                              </div>
-                              <br>
-                              <div class="row" style="padding-left:50px;">
-                                <img src="https://cdn3.iconfinder.com/data/icons/business-and-finance-glyph-7/64/business-and-finance-glyph-7-04-512.png" class="card-img-top logoEx" style="height:100px; width:100px">
-                                <div class="serviceContent textEx">
-                                  <h3>Lower Fare Rates up to 30%</h3>
-                                  <p>Spend up to 30% less on fares when you book a One Way Share.</p>
-                                </div>
-                              </div>
-                              <br>
-                              <div class="row" style="padding-left:50px;">
-                                <img src="https://www.grab.com/my/wp-content/uploads/sites/8/2016/08/GrabShare-Website_Dax-reduce-congestion.png" class="card-img-top logoEx" style="height:100px; width:100px">
-                                <div class="serviceContent textEx">
-                                  <h3>Save the Environment</h3>
-                                  <p>Carpooling reduces your carbon footprint.</p>
-                                </div>
-                              </div>
+
+    <h1 class="display-4 text-center text-success font-weight-bold pb-5" id="topupnow">Top Up Now</h1>
+    <div class="container">
+      <form action="#">
+        <div class="row justify-content-center ">
+
+          <div class=" col-md-10 col-lg-8 bg-white p-3 shadow border rounded">
+
+            <div class="input-group my-3">
+
+              <div class=" col-md-12 col-lg-12 pb-3 h4 px-3">Enter Amount:</div>
+              <div class=" col-md-12 col-lg-12  pb-4 ml-3">
+                <button class="btn  btn-lg btn-outline-success text-dark px-5 py-2 mr-2 mb-1" type="button" onclick="document.getElementById('amount').value=20">RM20</button>
+                <button class="btn  btn-lg btn-outline-success text-dark px-5 py-2 mr-2 mb-1" type="button" onclick="document.getElementById('amount').value=50">RM50</button>
+                <button class="btn  btn-lg btn-outline-success text-dark px-5 py-2 mr-2 mb-1" type="button" onclick="document.getElementById('amount').value=100">RM100</button>
+                <button class="btn  btn-lg btn-outline-success text-dark px-5 py-2 mr-2 mb-1" type="button" onclick="document.getElementById('amount').value=150">RM150</button>
+
+              </div>
+
+              <div class="input-group  px-3">
+              <input type="number" id="amount" class="form-control form-control-lg border-success " placeholder="Preferred Amount" aria-label="" aria-describedby="basic-addon1" min="10" max="150" name="amount">
+              <div class="input-group-append">
+                <button type="button" class="btn btn-lg btn-success px-4" data-toggle="modal" data-target="#topupModal">
+                  Top up
+                </button>
+              </div>
+            </div>
+              <!-- Button trigger modal -->
+            </div>
+            <small class="text-muted px-3 mb-5">Min reload amount is RM10</small>
+          </div>
+
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="topupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Top up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Are you sure you want to top up?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </form></div>
+
+
+
                           </div>
                 					</div>
 
 
                 					<div class="tab-pane fade" id="rent" role="tabpanel" aria-labelledby="nav-about-tab">
 
-                              <div class="">
-                                <p class="info pt-2 pb-4 px-3  text-dark text-justify" style="font-size:20px;"><span class="font-weight-bold text-warning">HAIL Rent </span>
-                              along with a driver, for up to 12 hours, at competitive rates. Whether you’d like to visit attraction spots, go on a food tour, run business errands, or simply roam around, we’re at your service. No advance booking needed.</p>
+                              <div class="container">
+                                <p class="info pt-2 pb-4 px-3  text-dark text-justify" style="font-size:20px;"><span class="font-weight-bold text-success">One Way </span>
+                               One Way transaction history record of every transaction within a certain period of time.Do note that you may only retrieve up to 300 transactions. </p>
+                               <h1 class="display-4 text-center text-success font-weight-bold pb-5">Transaction History</h1>
+
+                                 <table class="table table-striped table-dark rounded-lg mt-0 ">
+                                   <thead>
+                                     <tr>
+                                       <th scope="col">#</th>
+                                       <th scope="col">TransactionNo</th>
+                                       <th scope="col">Date</th>
+                                       <th scope="col">Amount</th>
+                                     </tr>
+                                   </thead>
+                                   <tbody>
+                                     <tr>
+                                       <th scope="row">1</th>
+                                       <td>TX0001</td>
+                                       <td>24/3/2020 10:33</td>
+                                       <td>20.00</td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row">2</th>
+                                       <td>TX0002</td>
+                                       <td>25/3/2020 8:12</td>
+                                       <td>20.00</td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row">3</th>
+                                       <td>TX0003</td>
+                                       <td>25/3/2020 21:30</td>
+                                       <td>50.00</td>
+                                     </tr>
+                                     <tr>
+                                       <th scope="row">4</th>
+                                       <td>TX0004</td>
+                                       <td>26/3/2020 10:00</td>
+                                       <td>100.00</td>
+                                     </tr>
+                                   </tbody>
+                                 </table>
                               </div>
-                              <h2 class="px-4 py-4 text-dark" >Why Rent A HAIL Rent?</h2>
-                            <div class="row">
-                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                      <div class="our-services-wrapper mb-60">
-                                        <div class="services-inner">
-                                          <div class="our-services-img">
-                                          <img src="img/stopclock.png" width="88px" alt="">
-                                          </div>
-                                          <div class="our-services-text">
-                                            <h4>No pre-booking required</h4>
-                                            <p>Book your ride instantly when you need it and your car will arrive within minutes.</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                      <div class="our-services-wrapper mb-60">
-                                        <div class="services-inner">
-                                          <div class="our-services-img">
-                                          <img src="img/analysis.png" width="88px" alt="">
-                                          </div>
-                                          <div class="our-services-text">
-                                            <h4>Flexible range of hourly packages</h4>
-                                            <p>Choose from a wide range of hourly packages to suit your needs.</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                      <div class="our-services-wrapper mb-60">
-                                        <div class="services-inner">
-                                          <div class="our-services-img">
-                                          <img src="img/fee.png" width="88px" alt="">
-                                          </div>
-                                          <div class="our-services-text">
-                                            <h4>Competitive prices</h4>
-                                            <p>All hourly packages are priced comparable to market rates inclusive of fuel & driver charges.</p>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+
+          </div>
                             </div>
-                          </div>
-                					</div>
-                				</div>
-                			</div>
+
+
+
+
                   </div>
+                </div>
+              </div>
+
                   </section>
 
 
-  <section id="transportTab">
-      	<div class="container">
-          <h1 id="servicesHome" class="text-center text-dark font-weight-bold pb-4 tabSpacing">One Way Transports</h1>
+                  <div class="container">
+                        <div class="text-center mt-5">
+                          <h1 class="display-4 mb-5 text-success font-weight-bold">Points Rewards</h1>
 
-      		</div>
-      	</div>
-      </section>
+                          <div class="container-fluid row text-center mb-5">
+                            <div class="col-sm-6">
+                              <div class="card glowCard">
+                                <div class="card-body">
+                                  <h1 class=" text-center text-danger mt-3  font-weight-bold">50% Off</h1>
+                                  <h4 class=" text-center text-success mt-3">One Way Transport</h4>
+                                  <p class="card-title">50% off your next OneWay ride!</p>
+                                </div>
+                                <div class="card-footer text-muted bg-success">
+                                  <p class="text-white"><small> Exchange with 1000 Points.</small></p>
+                                  <p class="mt-2 text-white">Expires in April 2022. T&amp;C Applied.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="card glowCard">
+                                <div class="card-body">
+                                  <h1 class=" text-center text-danger mt-3  font-weight-bold">50% Off</h1>
+                                  <h4 class=" text-center text-success mt-3">One Way FOOD</h4>
+                                  <p class="card-title">50% off your next OneWay order!</p>
+                                </div>
+                                <div class="card-footer text-muted bg-success">
+                                  <p class="text-white"><small> Exchange with 1000 Points.</small></p>
+                                  <p class="mt-2 text-white">Expires in April 2022. T&amp;C Applied.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container-fluid row text-center mb-5">
+                            <div class="col-sm-6">
+                              <div class="card glowCard">
+                                <div class="card-body">
+                                  <h1 class=" text-center text-danger mt-3  font-weight-bold">30% Off</h1>
+                                  <h4 class=" text-center text-success mt-3">One Way DELIVERY</h4>
+                                  <p class="card-title">30% off your next OneWay delivery services!</p>
+                                </div>
+                                <div class="card-footer text-muted bg-success">
+                                  <p class="text-white"><small> Exchange with 700 Points.</small></p>
+                                  <p class="mt-2 text-white">Expires in April 2022. T&amp;C Applied.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                              <div class="card glowCard">
+                                <div class="card-body">
+                                  <h1 class=" text-center text-danger mt-3  font-weight-bold">10% Off</h1>
+                                  <h4 class=" text-center text-success mt-3">One Way FOOD</h4>
+                                  <p class="card-title">10% off your next OneWay order!</p>
+                                </div>
+                                <div class="card-footer text-muted bg-success">
+                                  <p class="text-white"><small> Exchange with 200 Points.</small></p>
+                                  <p class="mt-2 text-white">Expires in April 2022. T&amp;C Applied.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
     <!--To top btn-->
     <div>
       <button class="floating-btn" id="topFunc"  onclick="topFunction()" title="Back to Top">

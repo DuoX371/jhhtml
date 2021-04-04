@@ -52,8 +52,37 @@ header.masthead {
     display: inline-block;
     padding: 20px 10px 0;
     text-decoration: none;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #179B22;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
 
-
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
 }
 </style>
 <body>
@@ -112,15 +141,15 @@ header.masthead {
            <h4 class="paral text-white">
              An on-demand delivery service that is safe, fast, and reliable
            </h4>
-             <button type="button" href="conEx" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</button>
+             <a href="#check" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</a>
         </div>
       </header>
 
 
-<div class="container" id="conEx">
+<div class="container">
           <h2 class="px-4 py-4 text-dark">Why Should You Use <span class=" text-success">HAIL Express</span>?</h2>
 
-          <div class="row">
+          <div class="row" id="check">
                     <div class="col-lg-4">
                       <img class="rounded-circle" src="image/i1.png" alt="Generic placeholder image" width="140" height="140">
                       <h2>ULTRA-FAST, ULTRA CONVINIENT</h2>
@@ -184,14 +213,7 @@ header.masthead {
                 <div class="card card-signin shadow-lg">
                   <div class="card-body py-5">
 
-                  <!--  <form action="#" method="post" class="form-signin">
-                        Enter a valid tracking number
-                      <div class="form-label-group my-4">
-                        <input type="text" class="form-control" name="trackingNumber" id="inputTrack" placeholder="Username" required minlength="10" pattern="[A-Za-z0-9]+" title="Tracking number 12must be alphanumeric">
-                      </div>
 
-                      <input id="tsubmit" class="btn btn-lg btn-block bg-warning" type="submit" name="submit" value="Submit" class="button">
-                    </form>-->
                     <p class="text-dark px-3">Enter a valid tracking number</p>
                     <div class="input-group col-md-12">
 
