@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+  <title>One Way</title>
+  <link rel="icon" href="wrestlingIcon.png" type="image/png" sizes="16x16">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</head>
+<style>
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url(https://imgur.com/lg4XOOD.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(7, 194, 43)), url(https://imgur.com/lg4XOOD.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    h3.display:hover, h3.display:active {font-size: 150%;};
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    background: #f8f9fa;
+    border-color: #1e7e34;
+    color: #212529;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #212529;
+    border-color: #212529;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #28a745;
+}
+</style>
+<body>
+<nav id="NavBar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="index.html">One Way</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="onewayTransport.html">One Way Transport</a>
+          <a class="dropdown-item" href="female.html">One Way Food</a>
+          <a class="dropdown-item" href="female.html">One Way Delivery</a>
+          <a class="dropdown-item" href="female.html">One Way Pay</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gym.html">Reload Credits</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contant Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gym.html">FAQs</a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse" id="navBarUser">
+         <ul class="nav navbar-nav nav-flex-icons ml-auto">
+           <li class="nav-item">
+                <a class="nav-link" href="dashboard.html"><i class="fas fa-user-alt"></i> Dashboard</a>
+            </li>
+       <li class="nav-item">
+           <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a>
+       </li>
+       <li class="nav-item">
+           <a class="nav-link" href="register.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+       </li>
+     </ul>
+   </div>
+  </div>
+</nav>
+
+<header class="masthead">
+        <div class="container jumbotron-padding  text-center">
+        <h3 class="display-4 text-white font-weight-bold">Dashboard</h3>
+           <h4 class="paral text-white">
+            One Way Pay Balance, One Way Points, One Way Ranking System
+           </h4>
+             <button type="button" href="conEx" id="btnEx" class="btn btn-lg btn-warning btn-circle my-4 mr-3">Check Out Now</button>
+        </div>
+      </header>
+
+      <div class="container ">
+        <h2 class="py-4 px-3 text-dark" ><span class="font-weight-bold text-success">One Way</span> Dashboard </h2>
+
+            <div class="container-fluid row text-center ml-auto mt-5">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="card border-success mb-60 shadow">
+                  <div class="card-body ">
+                    <h4 class=" text-center text-success mt-3">One Way Pay Balance</h4>
+                    <p class="card-text py-3">RM 1892.20</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card border-success mb-60 shadow">
+                  <div class="card-body ">
+                    <h4 class="text-center text-success mt-3">HAIL Points</h4>
+                    <p class="card-text py-3">3028</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="card-body p-0 mb-60 shadow">
+                  <div class="text-light">
+                    <div class="card border">
+                      <div class="card-body text-white bg-info">
+                        <h4 class="text-center mt-3">Ranking</h4>
+                        <p class="card-text py-3">Platinum
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      <section>
+          <div class="container ">
+
+              <h2 class="py-4 px-3 text-dark" ><span class="font-weight-bold text-success">One Way</span> Ranking System</h2>
+              <div class="elementor-image">
+										<img src="https://assets.grab.com/wp-content/uploads/sites/4/2018/10/16143456/grabrewards_blog-page_assets_member_loading-gif.gif" title="" alt="">											</div>
+              <div class="card-deck" >
+
+<div class="card">
+<img class="card-img-top" src="image/r1.png" alt="Card image cap">
+<div class="card-body " >
+  <h4 class="card-title text-info">Silver rank</h4>
+  <p class="card-text">  1.5 points award with every 1rm spend on One Way pay</p>
+  <br><h6 class="text-info"><u>Points needed to qualify: > 200</u></h3></br>
+
+
+</div>
+
+</div>
+<div class="card ">
+<img class="card-img-top" src="image/r2.png" alt="Card image cap">
+<div class="card-body ">
+  <h4 class="card-title text-warning">Gold rank</h4>
+  <p class="card-text">  2.25 points award with every 1rm spend on One Way pay</p>
+  <br><h6 class="text-warning"><u>Points needed to qualify: > 1500</u></h3></br>
+</div>
+
+</div>
+<div class="card">
+<img class="card-img-top" src="image/r3.png" alt="Card image cap">
+<div class="card-body">
+  <h4 class="card-title" style="color:#000080;">Platinum rank</h4>
+  <p class="card-text">  3 points award with every 1rm spend on One Way pay</p>
+  <br><h6 style="color:#000080;"><u>Points needed to qualify: > 3000</u></h3></br>
+  </div>
+
+</div>
+</div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="bg-success ">
+
+
+
+                  <div class="container ">
+                    <h1 class="pb-4  px-3 text-white font-weight-bold text-center">One Way Wallet </h1>
+
+                    <div class="row shadow">
+                			<div class="col-xs-12 ">
+                				<nav>
+                					<div class="nav nav-tabs nav-fill" id="tabServ" role="tablist">
+                						<a class="nav-item nav-link btn btn-outline-success active" id="oneWayCar" data-toggle="tab" href="#cars" role="tab" aria-controls="nav-home" aria-selected="true">One Way Wallet</a>
+                						<a class="nav-item nav-link btn btn-outline-success" id="oneWayShare" data-toggle="tab" href="#share" role="tab" aria-controls="nav-profile" aria-selected="false">Top Up</a>
+                						<a class="nav-item nav-link btn btn-outline-success" id="oneWayRent" data-toggle="tab" href="#rent" role="tab" aria-controls="nav-about" aria-selected="false">Transaction History</a>
+                					</div>
+                				</nav>
+                				<div class="tab-content py-3 px-3 px-sm-0" style="background-color: #f9f9f9;" id="nav-tabContent">
+
+                					<div class="tab-pane fade show active" id="cars" role="tabpanel" aria-labelledby="nav-home-tab" style="padding-bottom:30px;">
+                            <div class="container" >
+                              <h2 class="py-4 px-3 text-dark" >One way wallet</h2>
+                              <div class="">
+                                <p class="info pt-2 pb-4 px-3  text-dark text-justify" style="font-size:20px;">The<span class="font-weight-bold text-success"> One Way Wallet</span>
+                              is a payment account) that allows you to keep prepaid electronic money or “balance” in the One Way.There are 2 types of One Way wallets – Basic and Premium.
+                                To upgrade to a Premium Wallet, you are required to complete customer verification in the One Way.
+                              </p>
+
+                              </div>
+
+                              <div class="row">
+                                            <div class="col-md-6 col-lg-7 py-5 ">
+                                              <div class="table-responsive ">
+                                               <table class="table table-bordered table-hover table-light table-striped shadow w-100">
+                                                <thead class="bg-success">
+                                                <tr>
+                                                 <th colspan="2" class="text-center text-white " style="font-size:20px;">One Way Wallet Balance Limits</th>
+                                                </tr>
+                                                 </thead>
+                                                 <tbody><tr>
+                                                  <td class="table-active"> Basic Wallet </td>
+                                                  <td class="table-light">RM 2000.00</td>
+                                                 </tr>
+                                                 <tr>
+                                                  <td class="table-active"> Premium Wallet</td>
+                                                  <td class="table-light">RM 5000.00</td>
+                                                 </tr>
+
+                                              </tbody></table>
+                                              </div>
+                                              </div>
+                                              <div class="col-md-6 col-lg-5 py-5  ">
+
+                                                <div class="card-body p-0 mb-60 shadow">
+                                                  <div class="text-light">
+                                                    <div class="card border">
+                                                      <div class="card-body text-white bg-success">
+                                                        <h4 class="text-center mt-3">One Way Pay Balance</h4>
+                                                        <p class="card text-center text-dark py-3">RM 1892.20
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+
+                          </div>
+                					</div>
+
+                					<div class="tab-pane fade" id="share" role="tabpanel" aria-labelledby="nav-profile-tab" style="padding-bottom:30px;">
+                            <div class="container" >
+                              <h2 class="py-4 px-3 text-dark" >What is One Way Share?</h2>
+                              <div class="">
+                                <p class="info pt-2 pb-4 px-3  text-dark text-justify" style="font-size:20px;"><span class="font-weight-bold text-success">One Way Share </span>
+                                  is a shared One Way ride that allows you to spilt the cost of your ride with a stranger who is headed in a similiar direction as you.</p>
+                              </div>
+                              <h2 class="px-4 py-4 text-dark" >Why One Way Share?</h2>
+                              <div class="row" style="padding-left:50px;">
+                                <img src="https://www.grab.com/my/wp-content/uploads/sites/8/2018/06/GrabShare-website-Pax-03.png" class="card-img-top logoEx" style="height:100px; width:100px">
+                                <div class="serviceContent textEx">
+                                  <h3>Share & Save</h3>
+                                  <p>Share rides with anyone on your way to your destination</p>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row" style="padding-left:50px;">
+                                <img src="https://cdn3.iconfinder.com/data/icons/business-and-finance-glyph-7/64/business-and-finance-glyph-7-04-512.png" class="card-img-top logoEx" style="height:100px; width:100px">
+                                <div class="serviceContent textEx">
+                                  <h3>Lower Fare Rates up to 30%</h3>
+                                  <p>Spend up to 30% less on fares when you book a One Way Share.</p>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="row" style="padding-left:50px;">
+                                <img src="https://www.grab.com/my/wp-content/uploads/sites/8/2016/08/GrabShare-Website_Dax-reduce-congestion.png" class="card-img-top logoEx" style="height:100px; width:100px">
+                                <div class="serviceContent textEx">
+                                  <h3>Save the Environment</h3>
+                                  <p>Carpooling reduces your carbon footprint.</p>
+                                </div>
+                              </div>
+                          </div>
+                					</div>
+
+
+                					<div class="tab-pane fade" id="rent" role="tabpanel" aria-labelledby="nav-about-tab">
+
+                              <div class="">
+                                <p class="info pt-2 pb-4 px-3  text-dark text-justify" style="font-size:20px;"><span class="font-weight-bold text-warning">HAIL Rent </span>
+                              along with a driver, for up to 12 hours, at competitive rates. Whether you’d like to visit attraction spots, go on a food tour, run business errands, or simply roam around, we’re at your service. No advance booking needed.</p>
+                              </div>
+                              <h2 class="px-4 py-4 text-dark" >Why Rent A HAIL Rent?</h2>
+                            <div class="row">
+                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                      <div class="our-services-wrapper mb-60">
+                                        <div class="services-inner">
+                                          <div class="our-services-img">
+                                          <img src="img/stopclock.png" width="88px" alt="">
+                                          </div>
+                                          <div class="our-services-text">
+                                            <h4>No pre-booking required</h4>
+                                            <p>Book your ride instantly when you need it and your car will arrive within minutes.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                      <div class="our-services-wrapper mb-60">
+                                        <div class="services-inner">
+                                          <div class="our-services-img">
+                                          <img src="img/analysis.png" width="88px" alt="">
+                                          </div>
+                                          <div class="our-services-text">
+                                            <h4>Flexible range of hourly packages</h4>
+                                            <p>Choose from a wide range of hourly packages to suit your needs.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                      <div class="our-services-wrapper mb-60">
+                                        <div class="services-inner">
+                                          <div class="our-services-img">
+                                          <img src="img/fee.png" width="88px" alt="">
+                                          </div>
+                                          <div class="our-services-text">
+                                            <h4>Competitive prices</h4>
+                                            <p>All hourly packages are priced comparable to market rates inclusive of fuel & driver charges.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                            </div>
+                          </div>
+                					</div>
+                				</div>
+                			</div>
+                  </div>
+                  </section>
+
+
+  <section id="transportTab">
+      	<div class="container">
+          <h1 id="servicesHome" class="text-center text-dark font-weight-bold pb-4 tabSpacing">One Way Transports</h1>
+
+      		</div>
+      	</div>
+      </section>
+    <!--To top btn-->
+    <div>
+      <button class="floating-btn" id="topFunc"  onclick="topFunction()" title="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <div class="tabSpacing">
+    </div>
+  </div>
+
+
+
+<script>
+//Collapsible script
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+var floatBtn = document.getElementById("topFunc");
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    floatBtn.style.display = "block";
+  } else {
+    floatBtn.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function downFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 1100;
+}
+</script>
+
+<script>
+function show_hide() {
+  var x = document.getElementById("moreList");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+</script>
+
+<!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">One Way is a company offers services such as
+            taxis, e-wallet, food delivery and parcel delivery services.
+            Providing the best services and a wide selection of options for users.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Services</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">One Way Transport</a></li>
+            <li><a href="gym.html">One Way Food</a></li>
+            <li><a href="onewayTransport.html">One Way Delivery</a></li>
+            <li><a href="female.html">One Way Pay</a></li>
+            <li><a href="#FAQs">FAQs</a></li>
+          </ul>
+        </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Subscribe</h6>
+            <ul class="footer-links">
+              <p>Dont missed out on any offers!</p>
+              <div class="input-group flex-nowrap">
+                <input type="email" class="form-control" placeholder="Email Address" aria-describedby="addon-wrapping" style="background-color: #26272b;color:white">
+                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-envelope"></i></span>
+              </div>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>Download Now</h6>
+        <p><img src="https://i.imgur.com/l34H1KX.png" width="161px" height="62px">
+          <img src="https://i.imgur.com/ydqtM5i.png" width="161px" height="50px">
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
+
+</html>
